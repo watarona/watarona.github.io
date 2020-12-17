@@ -1,0 +1,56 @@
+@import url(assets/scripts/sanitize.css);
+body {
+    background-color: #f0f0f0;
+    background-image: url(../images/bg2.jpg);
+    line-height: 1.7;
+}
+.container {   
+    width: 1500px;
+    height: 900px;
+}
+header {
+    padding: 5px;
+    color: #000000;
+}
+.site_name {
+    font-family: serif ;
+    width: 1500px;
+    margin-top: 14px;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: left;
+   
+}
+a{
+    text-decoration: none;
+}
+.main-nav{
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+    margin-left: 0;
+    text-align: right;
+}
+.main-nav li{
+    margin-left: 36px;
+    padding-right: 0;
+    float: right;
+    font-weight: bold;
+}
+.main-nav a{
+    color:#000000;
+    background:  rgb(255, 255, 255);
+}
+.page-header{
+    /* display: flex;
+    justify-content: space-between; */
+    align-items: flex-start;
+    
+}
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
