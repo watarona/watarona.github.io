@@ -1,28 +1,61 @@
 @import url(assets/scripts/sanitize.css);
+@media screen and (min-width: 481px) { 
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    
+}
 body {
     background-color: #f0f0f0;
     background-image: url(../images/bg2.jpg);
     line-height: 1.7;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0px;
 }
 .container {   
-    width: 1911px;
+    width: 1915px;
     height: 900px;
 }
 header {
     padding: 0px;
+    margin: 0px;
     color: #000000;
     background-color: #fff;
-    width: 1911px;
+    width: 100%;
+}
+header::before{
+    position: fixed;
+    height: 50%;
 }
 .watarona_web_head img{
     width: 600px;
     height: 100px;
     text-align: right;
 }
+.page-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.wrapper{
+    max-width: 92.4%;
+    margin: 0 ;
+    padding: 0 4%;
+}
 .a{
     text-decoration: none;
+}
+.menu .bar {
+     width: 20px;
+     height: 2px;
+     background: #000;
+     border-radius: 5px;
+     opacity: 1;
+     visibility: visible;
+     transition: 0.5s ease;
+     transform-origin: left;
 }
 .main-nav{
     display: flex;
@@ -31,7 +64,12 @@ header {
     margin-top: 34px;
     list-style: none;
     margin-left: 0;
-    text-align: right;
+    /* text-align: right; */
+    align-items: center;
+    margin-left: auto;
+    transform-origin: left;
+    /* transform: rotate(-45deg); */
+
 }
 .main-nav li{
     margin-left: 36px;
@@ -43,14 +81,72 @@ header {
     color:#000000;
     /* background:  rgb(255, 255, 255); */
 }
-.page-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    
+
+.site-content img{
+    width: 60%;
+    height: 60%;
+    display:block;
+    margin: auto;
 }
-.wrapper{
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 4%;
+/* .circle_yoko_narabi{
+     display: inline-block;
+} */
+
+.circle-waku1{
+    position: relative;
+    width: 24%;
+    margin-left:15%;
+    margin-top: 150px;
+}
+.circle1{
+    background-image: url("../images/top.png");  
+    width:  180px;       
+    height: 180px;       
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+.circle_moji1{
+    color: #fff;
+    /* margin-left: 150%; */
+    padding-left:15% ;
+}
+/* .circle-waku2{
+    position: relative;
+    width: 24%;
+    margin-left:150%;
+    margin-top: 200px;
+} */
+/* .circle-waku3{
+    position: relative;
+    width: 24%;
+    margin-left:100%;
+    margin-top: 200px;
+} */
+
+/* .circle2{
+    background-image: url("../images/top.png");  
+    width:  180px;       
+    height: 180px;       
+    border-radius: 50%;  
+    border: 1px solid #000;
+    
+} */
+/* .circle3{
+    background-image: url("../images/top.png");  
+    width:  180px;       
+    height: 180px;       
+    border-radius: 50%;  
+    border: 1px solid #000;
+    
+} */
+
+/* 
+.circle_moji2{
+    color: #fff;
+    margin-left:150px;
+} */
+
+.circle-oosoto{display: flex;position: relative;}
+
+
 }
